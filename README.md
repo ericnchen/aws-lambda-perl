@@ -2,9 +2,7 @@
 
 Dockerfile to build an image with Perl 5 installed to `/opt` and a default command to create a zip archive.
 
-## Version
-
-The current version is: **5.30.0**
+The current version is: `5.30.0`
 
 ## Usage
 

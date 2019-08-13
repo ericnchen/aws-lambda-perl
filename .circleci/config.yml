@@ -2,9 +2,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.7.3
+      - image: circleci/node:10.16.1
     steps:
       - checkout
       - setup_remote_docker
       - run: make build
       - run: make package
+      - run: npm install serverless -g
+      - run: serverless deploy

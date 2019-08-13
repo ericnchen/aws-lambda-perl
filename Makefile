@@ -5,7 +5,7 @@
 #     make package
 
 IMAGE_TAG ?= latest
-IMAGE_TAG_USERNAME ?= ${USER}
+IMAGE_TAG_USERNAME ?= $(shell whoami)
 
 default: help
 help:

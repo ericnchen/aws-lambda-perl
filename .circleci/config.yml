@@ -9,4 +9,4 @@ jobs:
       - run: make build
       - run: make package
       - run: npm install serverless
-      - run: serverless deploy
+      - run: node_modules/serverless/bin/serverless deploy

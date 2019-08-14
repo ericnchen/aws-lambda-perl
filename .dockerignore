@@ -1,2 +1,3 @@
 # Ignore everything in this directory except for whitelisted (!) items.
 *
+!perl-*.tar.gz

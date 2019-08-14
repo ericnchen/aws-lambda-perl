@@ -1,7 +1,3 @@
-# aws-lambda-perl
-#
-# Serverless config to deploy this layer to AWS.
-
 service: aws-lambda-perl
 
 frameworkVersion: ">=1.34.0 <2.0.0"
@@ -14,15 +10,15 @@ provider:
 layers:
   perl:
     package:
-      artifact: perl-${opt:perl_version, '5.30.0'}-layer.zip
+      artifact: perl-layer.zip
 
 resources:
   Outputs:
     PerlLayerExport:
       Value:
-        Ref: PerlLayerExport
+        Ref: PerlLambdaLayer
       Export:
-        Name: PerlLayerExport
+        Name: PerlLambdaLayer
 
 package:
   exclude:
